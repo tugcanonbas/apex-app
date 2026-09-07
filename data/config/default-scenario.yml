@@ -1,0 +1,142 @@
+durationSeconds: 300
+includeDelay: true
+initialEtaSeconds: 200
+revisedEtaSeconds: 200
+selectionCountdownSeconds: 90
+assignmentDurationSeconds: 30
+arrivalCompletionBufferSeconds: 15
+rideEtaAfterArrivalMinutes: 6
+timings:
+  delay: 100
+  near_arrival: 260
+  arrival: 300
+vehicleIdentifiers:
+  - Vehicle ID
+  - Vehicle type
+supportMock:
+  label: Contact support
+  body: Support noted. Keep this screen open.
+  cancelLabel: Ask about cancelling
+phaseCopy:
+  ready:
+    eyebrow: VERDĒ
+    title: Waiting for ride
+    body: Your ride will appear here.
+  offline:
+    eyebrow: Connection paused
+    title: VERDĒ is reconnecting
+    body: Keep this screen open.
+  booking:
+    eyebrow: Plan your ride
+    title: Choose your shuttle
+    body: Choose the pickup that fits this trip.
+  assignment:
+    eyebrow: Assignment
+    title: Finding your shuttle
+    body: VERDĒ is confirming the vehicle, pickup, and route.
+  waiting:
+    eyebrow: On the way
+    title: Go to pickup
+    body: Follow the route and wait at the stop.
+  delay:
+    eyebrow: Timing
+    title: Pickup time changed
+    body: The pickup stays the same.
+  near_arrival:
+    eyebrow: Shuttle is approaching
+    title: Shuttle approaching
+    body: Check the shuttle number when it stops.
+  arrival:
+    eyebrow: Shuttle is arriving
+    title: Shuttle here
+    body: Match the vehicle number before you continue.
+  block_finished:
+    eyebrow: VERDĒ
+    title: Block finished
+    body: Keep this screen open.
+  study_finished:
+    eyebrow: VERDĒ
+    title: All set
+    body: This ride flow is complete. Please return the phone to the researcher.
+microUpdates:
+  booking:
+    - Pickup options ready.
+    - Shuttles checked.
+  assignment:
+    - Request received.
+    - Finding shuttle.
+    - Confirming route.
+  waiting:
+    - Shuttle on the way.
+    - Route updated.
+    - Pickup unchanged.
+  delay:
+    - Timing changed.
+    - ETA updated.
+    - Pickup unchanged.
+  near_arrival:
+    - Shuttle approaching.
+    - Check shuttle number.
+    - Stay at the stop.
+  arrival:
+    - Shuttle arrived.
+    - Vehicle check ready.
+rideOptions:
+  - id: verde-direct
+    label: Direct pickup
+    pickupPoint: THI Main Stop
+    destination: Mobility Lab
+    waitMinutes: 3
+    walkMinutes: 1
+    rideMinutes: 6
+    arrivalTime: '09:12'
+    vehicleType: Autonomous shuttle
+    vehicleId: Shuttle-4
+    occupancy: 2 seats free
+    co2SavedKg: 1.2
+    batteryPercent: 82
+    comfort: Quiet cabin
+    routeSummary: Short walk. Direct route.
+    recommendationReason: Closest pickup for this ride.
+    tags:
+      - Closest pickup
+      - Direct route
+    isRecommended: true
+  - id: verde-sheltered
+    label: Sheltered pickup
+    pickupPoint: Campus East Stop
+    destination: Mobility Lab
+    waitMinutes: 4
+    walkMinutes: 2
+    rideMinutes: 5
+    arrivalTime: '09:13'
+    vehicleType: Autonomous shuttle
+    vehicleId: Shuttle-2
+    occupancy: 3 seats free
+    co2SavedKg: 1.1
+    batteryPercent: 76
+    comfort: Covered waiting area
+    routeSummary: A little more walking. Covered stop.
+    recommendationReason: More cover while you wait.
+    tags:
+      - Covered pickup
+      - Balanced
+  - id: verde-shared
+    label: Shared campus loop
+    pickupPoint: Northwest Shuttle Stop
+    destination: Mobility Lab
+    waitMinutes: 5
+    walkMinutes: 3
+    rideMinutes: 7
+    arrivalTime: '09:16'
+    vehicleType: Autonomous shuttle
+    vehicleId: Shuttle-3
+    occupancy: 1 seat free
+    co2SavedKg: 1.5
+    batteryPercent: 88
+    comfort: Shared ride
+    routeSummary: Shared route with one campus stop.
+    recommendationReason: Lower impact, with a later arrival.
+    tags:
+      - Lower impact
+      - Shared

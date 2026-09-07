@@ -1,0 +1,83 @@
+@import 'tailwindcss';
+
+@theme {
+	--color-forest: #14422e;
+	--color-leaf: #36816c;
+	--color-mint: #c3e4d6;
+	--color-corduroy: #6b7a74;
+	--color-canvas: #ffffff;
+	--color-canvas-mist: #f6faf8;
+	--color-attention: #b8893a;
+	--color-critical: #a74d3f;
+	--color-ink: #14422e;
+	--font-display: Sora, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+	--font-ui: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+	--radius-verde-sm: 10px;
+	--radius-verde-md: 16px;
+	--radius-verde-lg: 24px;
+	--radius-verde-xl: 32px;
+	--shadow-verde-soft: 0 8px 28px rgba(20, 66, 46, 0.08);
+	--shadow-verde-ambient: 0 18px 48px rgba(20, 66, 46, 0.12);
+}
+
+:root {
+	font-family: var(--font-ui);
+	color: #14422e;
+	background: #f6faf8;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	--hairline: rgba(20, 66, 46, 0.12);
+	--hairline-strong: rgba(20, 66, 46, 0.22);
+	--surface-glass: rgba(255, 255, 255, 0.78);
+	--ease-calm: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+html {
+	min-height: 100%;
+	background: #f6faf8;
+}
+
+body {
+	min-height: 100%;
+	margin: 0;
+	background: #f6faf8;
+}
+
+button,
+input,
+select,
+textarea {
+	font: inherit;
+}
+
+button {
+	touch-action: manipulation;
+}
+
+.verde-card {
+	border: 1px solid var(--hairline);
+	border-radius: 24px;
+	background: #ffffff;
+	box-shadow: var(--shadow-verde-soft);
+}
+
+.verde-panel {
+	border: 1px solid var(--hairline);
+	border-radius: 24px;
+	background: #ffffff;
+}
+
+.verde-chip {
+	border-radius: 9999px;
+	background: #c3e4d6;
+	color: #14422e;
+	padding: 0.45rem 0.75rem;
+	font-size: 0.8125rem;
+	font-weight: 700;
+}
+
+.verde-focus:focus-visible {
+	outline: 2px solid #36816c;
+	outline-offset: 2px;
+}

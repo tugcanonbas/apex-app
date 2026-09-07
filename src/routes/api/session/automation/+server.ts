@@ -1,0 +1,13 @@
+import { json } from '@sveltejs/kit';
+import type { RequestHandler } from './$types';
+import { automationAction } from '$lib/server/study-store';
+
+export const POST: RequestHandler = async ({ request }) => {
+	try {
+		const { action, phase } = await request.json();
+		const session = await automationAction(action, phase);
+		return json({ session });
+	} catch (error) {
+		return json({ error: (error as Error).message }, { status: 400 });
+	}
+};

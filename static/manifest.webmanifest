@@ -1,0 +1,23 @@
+{
+	"name": "VERDĒ",
+	"short_name": "VERDĒ",
+	"description": "VERDĒ autonomous shuttle ride companion.",
+	"start_url": "/app",
+	"display": "standalone",
+	"background_color": "#f6faf8",
+	"theme_color": "#14422e",
+	"icons": [
+		{
+			"src": "/logo.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "any"
+		},
+		{
+			"src": "/logo.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "any"
+		}
+	]
+}

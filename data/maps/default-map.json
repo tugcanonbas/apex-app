@@ -1,0 +1,408 @@
+{
+  "id": "default-map",
+  "name": "Default Map",
+  "roomLabel": "Default Room",
+  "width": 960,
+  "height": 540,
+  "initialViewport": "default",
+  "objects": [
+    {
+      "id": "obstacle-mq76o3nb",
+      "type": "obstacle",
+      "label": "",
+      "x": 0,
+      "y": 175,
+      "width": 350,
+      "height": 350,
+      "size": 11,
+      "zIndex": -50
+    },
+    {
+      "id": "obstacle-mq799znp",
+      "type": "obstacle",
+      "label": "",
+      "x": 0,
+      "y": -66,
+      "width": 1500,
+      "height": 100,
+      "size": 11,
+      "zIndex": 0
+    },
+    {
+      "id": "obstacle-mq79akni",
+      "type": "obstacle",
+      "label": "",
+      "x": 1102,
+      "y": 160,
+      "width": 500,
+      "height": 600,
+      "size": 11,
+      "zIndex": 0
+    },
+    {
+      "id": "zone-mq76a8qp",
+      "type": "zone",
+      "label": "waiting-area",
+      "x": 663,
+      "y": 103,
+      "width": 80,
+      "height": 75,
+      "size": 11,
+      "participantVisible": false,
+      "triggerTags": [
+        "participant_waiting_zone_enter",
+        "participant_waiting_zone_exit"
+      ],
+      "zIndex": 0
+    },
+    {
+      "id": "zone-mq76biyf",
+      "type": "zone",
+      "label": "path-area-1",
+      "x": 585,
+      "y": 382,
+      "width": 197,
+      "height": 35,
+      "size": 11,
+      "participantVisible": false,
+      "triggerTags": [
+        "participant_route_start",
+        "path_area_1_enter"
+      ],
+      "zIndex": 0
+    },
+    {
+      "id": "zone-mq76cram",
+      "type": "zone",
+      "label": "path-area-2",
+      "x": 780,
+      "y": 325,
+      "width": 35,
+      "height": 100,
+      "size": 11,
+      "participantVisible": false,
+      "triggerTags": [
+        "path_area_2_enter"
+      ],
+      "zIndex": 0
+    },
+    {
+      "id": "zone-mq76f4oc",
+      "type": "zone",
+      "label": "path-area-3",
+      "x": 780,
+      "y": 225,
+      "width": 35,
+      "height": 100,
+      "size": 11,
+      "participantVisible": false,
+      "triggerTags": [
+        "participant_midroute_enter",
+        "path_area_3_enter"
+      ],
+      "zIndex": 0
+    },
+    {
+      "id": "zone-mq76ga7t",
+      "type": "zone",
+      "label": "path-area-4",
+      "x": 780,
+      "y": 123,
+      "width": 35,
+      "height": 100,
+      "size": 11,
+      "participantVisible": false,
+      "triggerTags": [
+        "path_area_4_enter"
+      ],
+      "zIndex": 0
+    },
+    {
+      "id": "zone-mq76rl2g",
+      "type": "zone",
+      "label": "shuttle-arriving",
+      "x": 303,
+      "y": 56,
+      "width": 20,
+      "height": 100,
+      "size": 11,
+      "participantVisible": false,
+      "triggerTags": [
+        "shuttle_arriving_zone_enter",
+        "shuttle_arriving_zone_exit"
+      ],
+      "zIndex": 0
+    },
+    {
+      "id": "road-mq78y82w",
+      "type": "road",
+      "label": "road",
+      "x": 0,
+      "y": 110,
+      "x2": 1100,
+      "y2": 110,
+      "size": 120,
+      "zIndex": 10
+    },
+    {
+      "id": "road-mq78zlia",
+      "type": "road",
+      "label": "road",
+      "x": 425,
+      "y": 165,
+      "x2": 425,
+      "y2": 800,
+      "size": 120,
+      "zIndex": 10
+    },
+    {
+      "id": "pedestrian_road-mq791ohc",
+      "type": "pedestrian_road",
+      "label": "pedestrian road",
+      "x": 520,
+      "y": 400,
+      "x2": 900,
+      "y2": 400,
+      "size": 30,
+      "zIndex": 20
+    },
+    {
+      "id": "pedestrian_road-mq792gwy",
+      "type": "pedestrian_road",
+      "label": "pedestrian road",
+      "x": 520,
+      "y": 285,
+      "x2": 900,
+      "y2": 285,
+      "size": 30,
+      "zIndex": 20
+    },
+    {
+      "id": "pedestrian_road-mq793c3m",
+      "type": "pedestrian_road",
+      "label": "pedestrian road",
+      "x": 370,
+      "y": 160,
+      "x2": 1000,
+      "y2": 160,
+      "size": 30,
+      "zIndex": 20
+    },
+    {
+      "id": "pedestrian_road-mq7956u7",
+      "type": "pedestrian_road",
+      "label": "pedestrian road",
+      "x": 0,
+      "y": 160,
+      "x2": 381,
+      "y2": 160,
+      "size": 30,
+      "zIndex": 20
+    },
+    {
+      "id": "pedestrian_road-mq7960w3",
+      "type": "pedestrian_road",
+      "label": "pedestrian road",
+      "x": 366,
+      "y": 175,
+      "x2": 366,
+      "y2": 600,
+      "size": 30,
+      "zIndex": 20
+    },
+    {
+      "id": "pedestrian_road-mq796tgo",
+      "type": "pedestrian_road",
+      "label": "pedestrian road",
+      "x": 485,
+      "y": 175,
+      "x2": 485,
+      "y2": 600,
+      "size": 30,
+      "zIndex": 20
+    },
+    {
+      "id": "pedestrian_road-mq798uuw",
+      "type": "pedestrian_road",
+      "label": "pedestrian road",
+      "x": 0,
+      "y": 50,
+      "x2": 1200,
+      "y2": 50,
+      "size": 30,
+      "zIndex": 20
+    },
+    {
+      "id": "pedestrian_road-mq7a2mna",
+      "type": "pedestrian_road",
+      "label": "pedestrian road",
+      "x": 800,
+      "y": 175,
+      "x2": 800,
+      "y2": 600,
+      "size": 30,
+      "zIndex": 20
+    },
+    {
+      "id": "wall-mq76imem",
+      "type": "wall",
+      "label": "wall",
+      "x": 505,
+      "y": 350,
+      "x2": 750,
+      "y2": 350,
+      "size": 5,
+      "zIndex": 30
+    },
+    {
+      "id": "wall-mq76jgmk",
+      "type": "wall",
+      "label": "wall",
+      "x": 505,
+      "y": 225,
+      "x2": 750,
+      "y2": 225,
+      "size": 5,
+      "zIndex": 30
+    },
+    {
+      "id": "wall-mq76kmio",
+      "type": "wall",
+      "label": "wall",
+      "x": 0,
+      "y": 30,
+      "x2": 1200,
+      "y2": 30,
+      "size": 15,
+      "zIndex": 30
+    },
+    {
+      "id": "wall-mq76lr6w",
+      "type": "wall",
+      "label": "wall",
+      "x": 505,
+      "y": 175,
+      "x2": 505,
+      "y2": 600,
+      "size": 10,
+      "zIndex": 30
+    },
+    {
+      "id": "wall-mq76mnmn",
+      "type": "wall",
+      "label": "wall",
+      "x": 910,
+      "y": 175,
+      "x2": 910,
+      "y2": 600,
+      "size": 15,
+      "zIndex": 30
+    },
+    {
+      "id": "shuttle_path-mq75yeel",
+      "type": "shuttle_path",
+      "label": "shuttle-path-1",
+      "x": 0,
+      "y": 130,
+      "x2": 700,
+      "y2": 130,
+      "size": 4,
+      "zIndex": 40
+    },
+    {
+      "id": "shuttle-mq761ahb",
+      "type": "shuttle",
+      "label": "",
+      "x": 0,
+      "y": 130,
+      "size": 50,
+      "zIndex": 50
+    },
+    {
+      "id": "path-mq761u76",
+      "type": "path",
+      "label": "path-1",
+      "x": 550,
+      "y": 400,
+      "x2": 800,
+      "y2": 400,
+      "size": 8,
+      "zIndex": 70
+    },
+    {
+      "id": "path-mq7643tt",
+      "type": "path",
+      "label": "path-2",
+      "x": 800,
+      "y": 400,
+      "x2": 800,
+      "y2": 150,
+      "size": 6,
+      "zIndex": 70
+    },
+    {
+      "id": "path-mq764x86",
+      "type": "path",
+      "label": "path-3",
+      "x": 800,
+      "y": 150,
+      "x2": 700,
+      "y2": 150,
+      "size": 6,
+      "zIndex": 70
+    },
+    {
+      "id": "participant_start-mq767ynt",
+      "type": "participant_start",
+      "label": "",
+      "x": 550,
+      "y": 400,
+      "size": 11,
+      "participantVisible": false,
+      "hideWhenTriggers": [],
+      "zIndex": 80
+    },
+    {
+      "id": "current_location-mq760sqk",
+      "type": "current_location",
+      "label": "",
+      "x": 550,
+      "y": 400,
+      "size": 12,
+      "zIndex": 90
+    },
+    {
+      "id": "pickup-mq75zqyi",
+      "type": "pickup",
+      "label": "THI Main Stop",
+      "x": 700,
+      "y": 124,
+      "size": 15,
+      "zIndex": 90
+    }
+  ],
+  "createdAt": "2026-06-13T21:21:08.674Z",
+  "updatedAt": "2026-06-14T02:07:30.451Z",
+  "viewports": {
+    "default": {
+      "x": 200,
+      "y": 0,
+      "width": 640,
+      "height": 480,
+      "label": "Default view"
+    },
+    "expanded": {
+      "x": 0,
+      "y": -30,
+      "width": 960,
+      "height": 540,
+      "label": "Expanded view"
+    }
+  },
+  "initialView": {
+    "viewport": "default",
+    "zoom": 2.5,
+    "panX": 150,
+    "panY": 150
+  }
+}
